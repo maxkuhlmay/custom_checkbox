@@ -1,0 +1,53 @@
+
+.customCheckbox {
+    &-container {
+
+    }
+
+    &__checkbox {
+        min-width: 26px;
+        margin-right: 8px;
+        width: 26px;
+        height: 26px;
+        border: 1px solid #707172;
+
+        &:hover {
+            border-color: #f08200;
+        }
+
+        &-checkmark {
+            width: 20px;
+            height: 20px;
+            padding: 4px;
+            display: none;
+
+            svg {
+                width: 100%;
+                height: 100%;
+                fill: #f08200;
+            }
+
+            &.selected {
+                display: block;
+            }
+        }
+
+        &-label {
+            padding: 10px 0;
+        }
+
+        &-container {
+            display: flex;
+            padding: 4px 8px;
+            justify-content: flex-start;
+            align-items: center;
+            cursor: pointer;
+
+            &:hover {
+                .customCheckbox__checkbox {
+                    border-color: #f08200;
+                }
+            }
+        }
+    }
+}
